@@ -4,18 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   background-color: var(--color-background);
 }
 
 .song-preview-card {
   display: flex;
   flex-direction: column;
-  margin: 30px 16px;
   background-color: #9296C4;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  min-width: 375px;
   max-width: 413px;
-  max-height: 607px;
   border-radius: 24px;
   padding: 16px;
   color: white;
@@ -48,7 +47,6 @@
 
   .song-preview-card__artist {
     line-height: 1.4;
-    letter-spacing: -0.18px;
   }
 
   .song-preview-card__time-icon-container {
@@ -58,7 +56,6 @@
   .song-preview-card__time {
     display: flex;
     line-height: 1.4;
-    letter-spacing: -0.18px;
   }
 
   svg {
@@ -75,7 +72,6 @@
   .song-preview-card__album-cover-and-info {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
     padding-bottom: 16px;
     width: 100%;
   }
@@ -91,7 +87,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
-    letter-spacing: -0.18px;
   }
 
   .song-preview-card__album-info-dot-spacer {
@@ -99,5 +94,18 @@
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 375px) {
+  .song-preview-card__title {
+    font-weight: 600;
+  }
+
+  .song-preview-card__artist-and-time {
+    font-weight: 500;
+  }
+
+  .song-preview-card__album-info-container {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
